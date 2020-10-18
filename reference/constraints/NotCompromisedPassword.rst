@@ -79,7 +79,7 @@ The following constraint ensures that the ``rawPassword`` property of the
 
 In order to make the password validation, this constraint doesn't send the raw
 password value to the ``haveibeenpwned.com`` API. Instead, it follows a secure
-process known as `k-anonimity password validation`_.
+process known as `k-anonymity password validation`_.
 
 In practice, the raw password is hashed using SHA-1 and only the first bytes of
 the hash are sent. Then, the ``haveibeenpwned.com`` API compares those bytes
